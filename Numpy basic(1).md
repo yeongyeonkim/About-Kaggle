@@ -9,10 +9,9 @@
 * NumPy와 Pandas를 사용하면, 반복문을 거의 사용하지 않고도 데이터 처리
 * 코드가 줄어들 뿐만 아니라, 성능도 최대 수 백배까지 빠르다.
 
-<pre><code>
-import numpy as np
+<code>import numpy as np
 ls = range(1000)
 %timeit [i**2 for i in ls]
 a = np.arange(1000)
 %timeit a**2
-</code></pre>
+</code>
