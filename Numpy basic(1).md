@@ -99,13 +99,14 @@ print(ar)
 # 팬시 인덱싱 (fancy indexing)
 
 <pre><code>
+In [] :
 ar = np.array([[0], [10], [20], [30], [40], [50]]) + np.array([[0, 1, 2, 3, 4, 5]])
 ar
 
 print(ar[[0,2,-1]]) # 지정한 row 얻기
 print(ar[:, [0,2,-1]]) # 지정한 column 얻기
 
-out[]:
+Out[]:
 
 [[ 0  1  2  3  4  5]
  [20 21 22 23 24 25]
