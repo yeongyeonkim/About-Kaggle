@@ -179,6 +179,10 @@ out []:
 1.0
 </code></pre>
 
+<hr/>
+
+# Exercise: Underfitting and Overfitting
+
 <pre><code>
 # Code you have previously used to load data
 import pandas as pd
@@ -210,10 +214,5 @@ iowa_model.fit(train_X, train_y)
 val_predictions = iowa_model.predict(val_X)
 val_mae = mean_absolute_error(val_predictions, val_y)
 print("Validation MAE: {:,.0f}".format(val_mae))
-
-# Set up code checking
-from learntools.core import binder
-binder.bind(globals())
-from learntools.machine_learning.ex5 import *
-print("\nSetup complete")
 </code></pre>
+
