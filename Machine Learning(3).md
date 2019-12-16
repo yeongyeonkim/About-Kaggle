@@ -9,6 +9,8 @@
 ### 2) Label Encoding
 
 * 레이블 인코딩은 각 고유 값을 다른 정수에 할당한다.
+* Label Encoder를 활용하여 문자는 숫자로 혹은 그 반대로 변환해준다.
+* .transform을 활용하여 숫자로 변환
 
 ### 3) One-Hot Encoding
 
