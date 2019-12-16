@@ -42,6 +42,8 @@ Name: country, Length: 129971, dtype: object
 
 <pre><code>
 in []:
+first_description = reviews.description[0] // or reviews.description.iloc[0]
+first_row_data = reviews.iloc[0]
 out[]:
 </code></pre>
 
