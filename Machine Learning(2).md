@@ -56,6 +56,10 @@ array([1])
 
 * 훈련 및 유효성 검사 세트를 모두 사용하고 있으므로 두 DataFrame에서 동일한 열을 삭제하는 데 주의.
 
+* drop 명령어를 통해 컬럼 전체를 삭제할 수 있다. axis=1은 컬럼을 뜻한다. axis=0인 경우, 로우를 삭제하며 이것이 디폴트이다. 
+* inplace의 경우 drop한 후의 데이터프레임으로 기존 데이터프레임을 대체하겠다는 뜻이다. 
+* inplace=True는 df = df.drop('A', axis=1)과 같다.
+
 <pre><code>
 in []:
 cols_with_missing = [col for col in X_train.columns if X_train[col].isnull().any()]
