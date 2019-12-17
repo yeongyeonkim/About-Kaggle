@@ -1,4 +1,4 @@
-# Categorical-variaables (범주형 변수)
+# Categorical-variables (범주형 변수)
 
 * 범주형 변수를 먼저 사전 처리하지 않고 Python의 대부분의 기계 학습 모델에 연결하려고 하면 오류가 발생한다.
 
