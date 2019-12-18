@@ -21,6 +21,8 @@ reviews['country'][0] // 단일 특정 값으로 드릴다운하려면 인덱싱
 판다 인덱싱은 두 가지 패러다임 중 하나로 작용한다. 
 첫 번째는 지수 기반 선택: 데이터에서 숫자 위치를 기준으로 데이터를 선택하는 것이다. iloc은 이 패러다임을 따른다.
 
+* loc는 라벨 인덱싱 / iloc는 정수 인덱싱
+
 <pre><code>
 in []:
 reviews.iloc[:, 0]
@@ -38,8 +40,6 @@ Name: country, Length: 129971, dtype: object
 
 위치가 아닌 데이터 인덱스 값이 중요.
 
-
-
 <pre><code>
 in []:
 first_description = reviews.description[0] // or reviews.description.iloc[0]
@@ -47,12 +47,31 @@ first_row_data = reviews.iloc[0]
 out[]:
 </code></pre>
 
-<pre><code>
-in []:
-out[]:
-</code></pre>
+# Manipulatitng the index
+
+* 
 
 <pre><code>
 in []:
+reviews.set_index("title")
+out[]:
+            country	description	designation	points	price	province	region
+title	
+</code></pre>
+
+# Conditional selection
+
+<pre><code>
+in []:
+reviews.loc[reviews.country == 'Italy']
 out[]:
 </code></pre>
+
+* 이 작업을 통해 각 기록의 국가를 기반(Italy)으로 한 True/False booleans Series가 생성되었다.
+* 그런 다음 이 결과를 Loc 내부에서 사용하여 관련 데이터를 선택할 수 있다.
+
+.isin(['Italy', 'France'])
+두 요소에 대한 시리즈를 생성
+
+# Assigning data
+
