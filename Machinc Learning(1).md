@@ -1,13 +1,15 @@
 # Scikit-learn 서브 패키지
 
+* 파이썬에서 머신 러닝 기법들을 사용하는데 도움을 주는 라이브러리이다.
 * 자료 제공: sklearn.datasets : 샘플 데이터 세트 제공
 
 # 가장 주요한 두개 메소드
 
 * fit 메소드: 입력 데이터를 적합화
-* predic 메소드: 새로운 데이터를 예측
+* predict 메소드: 새로운 데이터를 예측
 
 <pre><code>
+// SVM (Support Vector Machine) SVC(Support Vector Classifier)
 from sklearn import svm
 clf = svm.SVC()
 clf.fit(데이터, 레이블)
