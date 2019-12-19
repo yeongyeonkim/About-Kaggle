@@ -96,7 +96,7 @@ preprocessor = ColumnTransformer(
 in []:
 from sklearn.ensemble import RandomForestRegressor
 
-model = RandomForestRegressor(n_estimator=100, random_state=0)
+model = RandomForestRegressor(n_estimators=100, random_state=0)
 </code></pre>
 
 ### Step 3: Create and Evaluate the Pipeline
