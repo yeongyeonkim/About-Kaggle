@@ -9,7 +9,7 @@
 
 <pre><code>
 in []:
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import RandomForestClassifier
 import numpy as np
 
 X = np.array([[-3,-2],[-4,-5],[3,4],[4,5]])
